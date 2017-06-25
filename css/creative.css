@@ -146,6 +146,13 @@ aside {
     color: #74091a;
   }
 }
+.logo-img {
+  position: absolute;
+  height: 50px;
+  top: 0px;
+  left: 0px;
+  border-radius: 20px;
+}
 header {
   position: relative;
   width: 100%;
@@ -282,6 +289,9 @@ header .header-content .header-content-inner p {
 }
 .text-primary {
   color: #74091a;
+}
+.text-secondary {
+  color: #222222;
 }
 .no-gutter > [class*='col-'] {
   padding-right: 0;
