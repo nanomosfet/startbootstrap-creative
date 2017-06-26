@@ -122,17 +122,17 @@ aside {
         background-color: transparent;
         border-color: fade(white, 30%);
         .navbar-header .navbar-brand {
-            color: fade(white, 70%);
+            color: fade(@theme-secondary, 70%);
             &:hover,
             &:focus {
-                color: white;
+                color: @theme-secondary;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: fade(white, 70%);
+            color: fade(@theme-secondary, 70%);
             &:hover {
-                color: white;
+                color: @theme-secondary;
             }
         }
         &.affix {
@@ -175,7 +175,7 @@ header {
     background-position: center;
     background-image: url('../img/header.jpg');
     text-align: center;
-    color: white;
+    color: @theme-secondary;
     .header-content {
         position: relative;
         text-align: center;
@@ -193,8 +193,8 @@ header {
                 margin: 30px auto;
             }
             p {
-                font-weight: 300;
-                color: fade(white, 70%);
+                font-weight: 500;
+                color: fade(@theme-secondary, 90%);
                 font-size: 16px;
                 margin-bottom: 50px;
             }
@@ -371,4 +371,8 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @gray-darker;
+}
+
+.hide {
+    display: none;
 }
