@@ -161,7 +161,7 @@ aside {
 
 .logo-img {
     position: absolute;
-    height: 50px;
+    height: inherit;
     top: 0px;
     left:0px;
     border-radius: 20px;
@@ -188,6 +188,8 @@ header {
                 margin-top: 0;
                 margin-bottom: 0;
                 font-size: 30px;
+                background-color: fade(#ffffff, 60%);
+                border-radius: 15px;
             }
             hr {
                 margin: 30px auto;
@@ -197,6 +199,8 @@ header {
                 color: fade(@theme-secondary, 90%);
                 font-size: 16px;
                 margin-bottom: 50px;
+                background-color: fade(#ffffff, 60%);
+                border-radius: 15px;
             }
         }
     }
@@ -375,4 +379,18 @@ body {
 
 .hide {
     display: none;
+}
+
+.img-tile {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.navbar-brand {
+    height: 75px;
+}
+
+.navbar-nav {
+    padding-top: 15px;
 }

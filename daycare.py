@@ -40,8 +40,17 @@ class mainpageHandler(Handler):
     def get(self):
         self.render('index.html')
 
+class show_documents(Handler):
+    def get(self):
+        files = os.listdir('./docs')
+        self.render('show_docs.html', files = files)
+
+
+
 
 
 app = webapp2.WSGIApplication([
     ('/', mainpageHandler),
+    ('/documents', show_documents),
+
 ], debug=True)
