@@ -1,0 +1,33 @@
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+
+- url: /vendor
+  static_dir: vendor
+
+- url: /js
+  static_dir: js
+
+- url: /css
+  static_dir: css
+
+- url: /img
+  static_dir: img
+
+- url: /docs
+  static_dir: docs
+
+- url: /.*
+  script: daycare.app
+
+- url: /docs
+  script: daycare.app
+
+
+libraries:
+- name: jinja2
+  version: latest
+
+

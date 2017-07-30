@@ -122,17 +122,17 @@ aside {
         background-color: transparent;
         border-color: fade(white, 30%);
         .navbar-header .navbar-brand {
-            color: fade(white, 70%);
+            color: fade(@theme-secondary, 70%);
             &:hover,
             &:focus {
-                color: white;
+                color: @theme-secondary;
             }
         }
         .nav > li > a,
         .nav > li > a:focus {
-            color: fade(white, 70%);
+            color: fade(@theme-secondary, 70%);
             &:hover {
-                color: white;
+                color: @theme-secondary;
             }
         }
         &.affix {
@@ -159,6 +159,14 @@ aside {
 
 // Homepage Header
 
+.logo-img {
+    position: absolute;
+    height: inherit;
+    top: 0px;
+    left:0px;
+    border-radius: 20px;
+}
+
 header {
     position: relative;
     width: 100%;
@@ -167,7 +175,7 @@ header {
     background-position: center;
     background-image: url('../img/header.jpg');
     text-align: center;
-    color: white;
+    color: @theme-secondary;
     .header-content {
         position: relative;
         text-align: center;
@@ -180,15 +188,19 @@ header {
                 margin-top: 0;
                 margin-bottom: 0;
                 font-size: 30px;
+                background-color: fade(#ffffff, 60%);
+                border-radius: 15px;
             }
             hr {
                 margin: 30px auto;
             }
             p {
-                font-weight: 300;
-                color: fade(white, 70%);
+                font-weight: 500;
+                color: fade(@theme-secondary, 90%);
                 font-size: 16px;
                 margin-bottom: 50px;
+                background-color: fade(#ffffff, 60%);
+                border-radius: 15px;
             }
         }
     }
@@ -227,6 +239,7 @@ header {
 
 .service-box {
     max-width: 400px;
+    height: 200px;
     margin: 50px auto 0;
     @media (min-width: 992px) {
         margin: 20px auto 0;
@@ -306,6 +319,10 @@ header {
     color: @theme-primary;
 }
 
+.text-secondary {
+    color: @gray-darker;
+}
+
 .no-gutter > [class*='col-'] {
     padding-right:0;
     padding-left:0;
@@ -358,4 +375,22 @@ img::-moz-selection {
 
 body {
     webkit-tap-highlight-color: @gray-darker;
+}
+
+.hide {
+    display: none;
+}
+
+.img-tile {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.navbar-brand {
+    height: 75px;
+}
+
+.navbar-nav {
+    padding-top: 15px;
 }
