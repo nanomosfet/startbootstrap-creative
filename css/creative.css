@@ -9,7 +9,7 @@ body {
   width: 100%;
 }
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Indie Flower', cursive;
 }
 hr {
   border-color: #874fb6;
@@ -35,7 +35,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Indie Flower', cursive;
 }
 p {
   font-size: 16px;
@@ -64,14 +64,14 @@ aside {
 .navbar-default {
   background-color: white;
   border-color: rgba(34, 34, 34, 0.05);
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Indie Flower', cursive;
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
   transition: all 0.35s;
 }
 .navbar-default .navbar-header .navbar-brand {
   color: #874fb6;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Indie Flower', cursive;
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -145,6 +145,12 @@ aside {
   .navbar-default.affix .nav > li > a:focus:hover {
     color: #874fb6;
   }
+  .navbar-default .navbar-brand {
+    height: 100px;
+  }
+  .navbar-default .navbar-nav {
+    padding-top: 25px;
+  }
 }
 .logo-img {
   position: absolute;
@@ -164,7 +170,7 @@ header {
   background-position: center;
   background-image: url('../img/header.jpg');
   text-align: center;
-  color: #000000;
+  color: #874fb6;
 }
 header .header-content {
   position: relative;
@@ -174,22 +180,22 @@ header .header-content {
 }
 header .header-content .header-content-inner h1 {
   font-weight: 700;
-  text-transform: uppercase;
+  text-transform: none;
   margin-top: 0;
   margin-bottom: 0;
-  font-size: 30px;
-  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 32px;
+  background-color: #ffffff;
   border-radius: 15px;
 }
 header .header-content .header-content-inner hr {
   margin: 30px auto;
 }
 header .header-content .header-content-inner p {
-  font-weight: 500;
-  color: rgba(0, 0, 0, 0.9);
-  font-size: 16px;
+  font-weight: 700;
+  color: #874fb6;
+  font-size: 18px;
   margin-bottom: 50px;
-  background-color: rgba(255, 255, 255, 0.6);
+  background-color: #ffffff;
   border-radius: 15px;
 }
 @media (min-width: 768px) {
@@ -210,13 +216,16 @@ header .header-content .header-content-inner p {
     margin-right: auto;
   }
   header .header-content .header-content-inner h1 {
-    font-size: 50px;
+    font-size: 35px;
   }
   header .header-content .header-content-inner p {
     font-size: 18px;
     max-width: 80%;
     margin-left: auto;
-    margin-right: auto;
+    margin-right: 0;
+    width: 35%;
+    position: relative;
+    top: 40px;
   }
 }
 .section-heading {
@@ -264,7 +273,7 @@ header .header-content .header-content-inner p {
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Indie Flower', cursive;
   padding: 0 15px;
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
@@ -399,7 +408,7 @@ fieldset[disabled] .btn-primary.active {
   background-color: white;
 }
 .btn {
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Indie Flower', cursive;
   border: none;
   border-radius: 300px;
   font-weight: 700;
@@ -437,9 +446,9 @@ body {
   height: 250px;
   object-fit: cover;
 }
-.navbar-brand {
-  height: 75px;
+.list-group {
+  font-weight: 600;
 }
-.navbar-nav {
-  padding-top: 15px;
+#contact {
+  font-weight: 600;
 }

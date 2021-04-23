@@ -18,6 +18,7 @@ import os
 import time
 import json
 import xml.etree.ElementTree as ET
+from google.appengine.api.files.file import listdir as ls
 
 from google.appengine.api import mail
 

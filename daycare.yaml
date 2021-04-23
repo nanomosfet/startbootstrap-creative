@@ -18,12 +18,14 @@ handlers:
 
 - url: /docs
   static_dir: docs
+  application_readable: true
 
 - url: /.*
   script: daycare.app
 
 - url: /docs
   script: daycare.app
+  
 
 
 libraries:

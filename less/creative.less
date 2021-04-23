@@ -154,6 +154,12 @@ aside {
                 }
             }
         }
+        .navbar-brand {
+            height: 100px;
+        }
+        .navbar-nav {
+            padding-top: 25px;
+        }
     }
 }
 
@@ -175,7 +181,7 @@ header {
     background-position: center;
     background-image: url('../img/header.jpg');
     text-align: center;
-    color: @theme-secondary;
+    color: @theme-primary;
     .header-content {
         position: relative;
         text-align: center;
@@ -184,22 +190,22 @@ header {
         .header-content-inner {
             h1 {
                 font-weight: 700;
-                text-transform: uppercase;
+                text-transform: none;
                 margin-top: 0;
                 margin-bottom: 0;
-                font-size: 30px;
-                background-color: fade(#ffffff, 60%);
+                font-size: 32px;
+                background-color: fade(white, 100%);
                 border-radius: 15px;
             }
             hr {
                 margin: 30px auto;
             }
             p {
-                font-weight: 500;
-                color: fade(@theme-secondary, 90%);
-                font-size: 16px;
+                font-weight: 700;
+                color: fade(@theme-primary, 100%);
+                font-size: 18px;
                 margin-bottom: 50px;
-                background-color: fade(#ffffff, 60%);
+                background-color: fade(white, 100%);
                 border-radius: 15px;
             }
         }
@@ -218,13 +224,16 @@ header {
                 margin-left: auto;
                 margin-right: auto;
                 h1 {
-                    font-size: 50px;
+                    font-size: 35px;
                 }
                 p {
                     font-size: 18px;
                     max-width: 80%;
                     margin-left: auto;
-                    margin-right: auto;
+                    margin-right: 0;
+                    width: 35%;
+                    position: relative;
+                    top:40px;
                 }
             }
         }
@@ -387,10 +396,12 @@ body {
     object-fit: cover;
 }
 
-.navbar-brand {
-    height: 75px;
+
+
+.list-group {
+    font-weight:600;
 }
 
-.navbar-nav {
-    padding-top: 15px;
+#contact {
+    font-weight:600;
 }
